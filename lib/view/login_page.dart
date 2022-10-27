@@ -21,88 +21,45 @@ class _LoginPageState extends State<LoginPage> {
          child: Padding(
            padding: const EdgeInsets.only(top: 60),
            child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            //crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              
-              /*LOGO LIVE */
-              SizedBox(
-                height: MediaQuery.of(context).size.height * 0.07,
-                width: MediaQuery.of(context).size.width,
-                child: SvgPicture.asset(
-                  'assets/svg/logo_live.svg',
-                  color: Colors.black
-                ),
+              Container(
+                height: 50,
+                width: 300,
+                color: Colors.yellow,
               ),
               const SizedBox(height: 60),
-
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 60),
-                child: Column(
-                  children:  [
-                    const Align(
-                        alignment: Alignment.centerLeft,
-                        child: Text(
-                        'Email',
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 14,
-                          fontWeight: FontWeight.w600
-                        ),
-                      ),
-                    ),
-                    const SizedBox(height: 4),
-                    TextFormField(
-                      decoration: const InputDecoration(
-                        hintText: 'Digite seu email',
-                        border: OutlineInputBorder()
-                      ),   
-                    ),
-                    const SizedBox(height: 20), 
-                     const Align(
-                        alignment: Alignment.centerLeft,
-                        child: Text(
-                        'Senha',
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 14,
-                          fontWeight: FontWeight.w600
-                        ),
-                      ),
-                    ),
-                    const SizedBox(height: 5),
-                    TextFormField(
-                      obscureText: true,
-                      decoration: const InputDecoration(
-                        suffixIcon: IconButton(
-                          onPressed: null,
-                          icon: Icon(MdiIcons.eye)
-                        ),
-                        hintText: 'Digite sua senha',
-                        border: OutlineInputBorder(),
-                      ),   
-                    ), 
-                    const SizedBox(height: 30),
-                    Container(
-                      width: MediaQuery.of(context).size.width,
-                      child: const TextButton(
-                        child: Text(
-                          'Entrar',
-                          style: TextStyle(
-                            fontSize: 14,
-                            color: Colors.white
-                          ),
-                          ),
-                        onPressed: null,
-                      ),  
-                       decoration: BoxDecoration(
-                       borderRadius: BorderRadius.circular(4),
-                       color: const Color.fromARGB(245, 248, 84, 84),
-                       ),                
-                    ),
-                  ],
-                ),
+              Container(
+                height: 10,
+                width: 300,
+                color: Colors.green[200],
               ),
+              const SizedBox(height: 2),
+              Container(
+                height: 40,
+                width: 300,
+                color: Colors.green,
+              ),
+              const SizedBox(height: 10),
+              Container(
+                height: 10,
+                width: 300,
+                color: Colors.green[200],
+              ),
+              const SizedBox(height: 2),
+              Container(
+                height: 40,
+                width: 300,
+                color: Colors.green,
+              ),
+              const SizedBox(height: 30),
+
+              Container(
+                height: 40,
+                width: 300,
+                color: Colors.orange,
+              ),
+
+
             ],
            ),
          ),
